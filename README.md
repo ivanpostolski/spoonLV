@@ -1,8 +1,6 @@
 spoonLV
 =======
 
-Using spoon (http://spoon.gforge.inria.fr/). Prints all local variables from all statements
-
 *Example of use:*
 
 mvn clean install
