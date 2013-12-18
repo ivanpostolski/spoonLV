@@ -1,45 +1,56 @@
-compiling sources: [src/main/java/fr/inria/Main.java, src/main/java/fr/inria/StatementProcessor.java, src/main/java/fr/inria/LocalVariableProcessor.java]
-compiled in 540 ms
+compiling sources: [src/main/java/fr/inria/Main.java, src/main/java/fr/inria/BaseProcessor.java, src/main/java/fr/inria/StatementProcessor.java, src/main/java/fr/inria/LocalVariableProcessor.java]
+compiled in 558 ms
 compiling templates: []
 compiled in 2 ms
 fr.inria.StatementProcessor
 property file not found for processor 'fr.inria.StatementProcessor'
 Statement: 1
-new exo.scanner.LocalVariableScanner()
------------------------------------
-Statement: 2
 {
 }
 -----------------------------------
-Statement: 3
+Statement: 2
 super()
 -----------------------------------
+Statement: 3
+{
+}
+-----------------------------------
 Statement: 4
+new exo.scanner.LocalVariableScanner()
+-----------------------------------
+Statement: 5
+{
+}
+-----------------------------------
+Statement: 6
+super()
+-----------------------------------
+Statement: 7
 {
     return scanner;
 }
 -----------------------------------
-Statement: 5
+Statement: 8
 return scanner
 -----------------------------------
-Statement: 6
+Statement: 9
 {
     element.accept(scanner);
 }
 parameter access: element
 -----------------------------------
-Statement: 7
+Statement: 10
 element.accept(scanner)
 parameter access: element
 -----------------------------------
-Statement: 8
+Statement: 11
 {
 }
 -----------------------------------
-Statement: 9
+Statement: 12
 super()
 -----------------------------------
-Statement: 10
+Statement: 13
 {
     fr.inria.Main main = new fr.inria.Main();
     main.runSpoon(args[0]);
@@ -48,19 +59,19 @@ variable: main declared in file src/main/java/fr/inria/Main.java:20
 variable access : main
 parameter access: args
 -----------------------------------
-Statement: 11
+Statement: 14
 fr.inria.Main main = new fr.inria.Main()
 variable: main declared in file src/main/java/fr/inria/Main.java:20
 -----------------------------------
-Statement: 12
+Statement: 15
 new fr.inria.Main()
 -----------------------------------
-Statement: 13
+Statement: 16
 main.runSpoon(args[0])
 variable access : main
 parameter access: args
 -----------------------------------
-Statement: 14
+Statement: 17
 {
     spoon.support.StandardEnvironment env = new spoon.support.StandardEnvironment();
     env.setComplianceLevel(6);
@@ -105,53 +116,53 @@ variable access : pm
 variable access : processor
 variable access : pm
 -----------------------------------
-Statement: 15
+Statement: 18
 spoon.support.StandardEnvironment env = new spoon.support.StandardEnvironment()
 variable: env declared in file src/main/java/fr/inria/Main.java:26
 -----------------------------------
-Statement: 16
+Statement: 19
 new spoon.support.StandardEnvironment()
 -----------------------------------
-Statement: 17
+Statement: 20
 env.setComplianceLevel(6)
 variable access : env
 -----------------------------------
-Statement: 18
+Statement: 21
 env.setVerbose(true)
 variable access : env
 -----------------------------------
-Statement: 19
+Statement: 22
 env.setDebug(true)
 variable access : env
 -----------------------------------
-Statement: 20
+Statement: 23
 spoon.support.DefaultCoreFactory f = new spoon.support.DefaultCoreFactory()
 variable: f declared in file src/main/java/fr/inria/Main.java:31
 -----------------------------------
-Statement: 21
+Statement: 24
 new spoon.support.DefaultCoreFactory()
 -----------------------------------
-Statement: 22
+Statement: 25
 spoon.reflect.Factory factory = new spoon.reflect.Factory(f , env)
 variable: factory declared in file src/main/java/fr/inria/Main.java:32
 variable access : f
 variable access : env
 -----------------------------------
-Statement: 23
+Statement: 26
 new spoon.reflect.Factory(f , env)
 variable access : f
 variable access : env
 -----------------------------------
-Statement: 24
+Statement: 27
 spoon.support.builder.SpoonBuildingManager builder = new spoon.support.builder.SpoonBuildingManager(factory)
 variable: builder declared in file src/main/java/fr/inria/Main.java:33
 variable access : factory
 -----------------------------------
-Statement: 25
+Statement: 28
 new spoon.support.builder.SpoonBuildingManager(factory)
 variable access : factory
 -----------------------------------
-Statement: 26
+Statement: 29
 for (java.lang.String dir : sourceDirectory.split(java.lang.System.getProperty("path.separator")))
     try {
         builder.addInputSource(new java.io.File(dir));
@@ -167,18 +178,18 @@ variable access : builder
 variable: e declared in file src/main/java/fr/inria/Main.java:38
 variable access : e
 -----------------------------------
-Statement: 27
+Statement: 30
 java.lang.String dir
 variable: dir declared in file src/main/java/fr/inria/Main.java:34
 -----------------------------------
-Statement: 28
+Statement: 31
 sourceDirectory.split(java.lang.System.getProperty("path.separator"))
 parameter access: sourceDirectory
 -----------------------------------
-Statement: 29
+Statement: 32
 java.lang.System.getProperty("path.separator")
 -----------------------------------
-Statement: 30
+Statement: 33
 try {
     builder.addInputSource(new java.io.File(dir));
     builder.build();
@@ -191,7 +202,7 @@ variable access : builder
 variable: e declared in file src/main/java/fr/inria/Main.java:38
 variable access : e
 -----------------------------------
-Statement: 31
+Statement: 34
 {
     builder.addInputSource(new java.io.File(dir));
     builder.build();
@@ -200,75 +211,75 @@ variable access : builder
 variable access : dir
 variable access : builder
 -----------------------------------
-Statement: 32
+Statement: 35
 builder.addInputSource(new java.io.File(dir))
 variable access : builder
 variable access : dir
 -----------------------------------
-Statement: 33
+Statement: 36
 new java.io.File(dir)
 variable access : dir
 -----------------------------------
-Statement: 34
+Statement: 37
 builder.build()
 variable access : builder
 -----------------------------------
-Statement: 35
+Statement: 38
 java.lang.Exception e
 variable: e declared in file src/main/java/fr/inria/Main.java:38
 -----------------------------------
-Statement: 36
+Statement: 39
 {
     e.printStackTrace();
 }
 variable access : e
 -----------------------------------
-Statement: 37
+Statement: 40
 e.printStackTrace()
 variable access : e
 -----------------------------------
-Statement: 38
+Statement: 41
 spoon.processing.ProcessingManager pm = new spoon.support.QueueProcessingManager(factory)
 variable: pm declared in file src/main/java/fr/inria/Main.java:41
 variable access : factory
 -----------------------------------
-Statement: 39
+Statement: 42
 new spoon.support.QueueProcessingManager(factory)
 variable access : factory
 -----------------------------------
-Statement: 40
+Statement: 43
 fr.inria.StatementProcessor processor = new fr.inria.StatementProcessor(new fr.inria.LocalVariableProcessor())
 variable: processor declared in file src/main/java/fr/inria/Main.java:42
 -----------------------------------
-Statement: 41
+Statement: 44
 new fr.inria.StatementProcessor(new fr.inria.LocalVariableProcessor())
 -----------------------------------
-Statement: 42
+Statement: 45
 new fr.inria.LocalVariableProcessor()
 -----------------------------------
-Statement: 43
+Statement: 46
 pm.addProcessor(processor)
 variable access : pm
 variable access : processor
 -----------------------------------
-Statement: 44
+Statement: 47
 pm.process()
 variable access : pm
 -----------------------------------
-Statement: 45
+Statement: 48
 {
     fr.inria.StatementProcessor.this.decoratedAbstractProcessor = decoratedAbstractProcessor;
 }
 parameter access: decoratedAbstractProcessor
 -----------------------------------
-Statement: 46
+Statement: 49
 super()
 -----------------------------------
-Statement: 47
+Statement: 50
 fr.inria.StatementProcessor.this.decoratedAbstractProcessor = decoratedAbstractProcessor
 parameter access: decoratedAbstractProcessor
 -----------------------------------
-Statement: 48
+Statement: 51
 {
     (i)++;
     java.lang.System.out.println(("Statement: " + (i)));
@@ -279,20 +290,20 @@ Statement: 48
 parameter access: element
 parameter access: element
 -----------------------------------
-Statement: 49
+Statement: 52
 (i)++
 -----------------------------------
-Statement: 50
+Statement: 53
 java.lang.System.out.println(("Statement: " + (i)))
 -----------------------------------
-Statement: 51
+Statement: 54
 java.lang.System.out.println(element)
 parameter access: element
 -----------------------------------
-Statement: 52
+Statement: 55
 fr.inria.StatementProcessor.this.decoratedAbstractProcessor.process(element)
 parameter access: element
 -----------------------------------
-Statement: 53
+Statement: 56
 java.lang.System.out.println("-----------------------------------")
 -----------------------------------

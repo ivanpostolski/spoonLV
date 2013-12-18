@@ -1,11 +1,11 @@
-package exo.scanner.test;
+package exo.scanner.basic_test;
 
 import fr.inria.LocalVariableProcessor;
 import fr.inria.StatementProcessor;
 
 
 /**
- * Class used to test local variable scanner
+ * Class used to basic_test local variable scanner
  */
 public class LocalVariableScannerTestClass {
 
